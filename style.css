@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color:rgb(164, 11, 134);
+}
+.banner-wrapper{
+    padding: 100px 0px;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+.text-break{
+    display: block;
+}
+.header-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    color: white;
+
+}
+.header-wrapper nav 
+{
+    display: flex;
+    gap:30px
+}
+.header-wrapper nav a{
+    color: white;
+   
+}
+.banner-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-wrapper> div{
+    width: 50%;
+
+}
+.banner-wrapper p
+{
+    margin: 30px 0px;
+
+}
+.banner-wrapper h1{
+    font-size: 35px;
+}
+.btn
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.btn
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn a:nth-child(1)
+{
+    background-color: orange;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.btn a:nth-child(2)
+{
+   color: black;
+   font-weight:600;
+   
+   
+}
+h2{
+    padding-bottom: 20px;
+}
+.jobs-wrapper
+{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+   
+   
+    
+}
+.jobs-wrapper>div{
+    padding: 30px;
+    color: white;
+}
+.jobs-wrapper > div > span{
+    display: inline-block;
+    color: red;
+    margin: 10px 0px;
+}
+.jobs-wrapper>div>div{
+   display: flex;
+   gap: 30px;
+   align-items: center;
+}
+.jobs-wrapper>div>div a{
+    border: 2px white solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all .30s;
+}
+.jobs-wrapper>div>div a:hover{
+background-color: orange;
+color: black;
+
+}
+
+
+.jobs-wrapper div:nth-child(1)
+{
+    background-color: #0c445c;
+    border-radius: 10px;
+}
+.jobs-wrapper div:nth-child(2)
+{
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.jobs-wrapper div:nth-child(3)
+{
+    background-color: brown;
+    border-radius: 10px;
+}
+footer{
+    padding: 20px 0px;
+    background-color: gainsboro;
+}
+footer p{
+    color: blue;
+   text-align: center;
+}
+
+
+
+@media only screen and (min-width: 1200px)
+{
+    .banner-wrapper h1
+    {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header-wrapper{
+        flex-direction: column;
+        text-align: center;
+        gap:20px;
+    }
+    .header-wrapper nav 
+    {
+        justify-content: center;
+    }
+    .text-break{
+        display: inline;
+    }
+
+  }
+
+  @media only screen and (max-width: 992px) {
+    .banner-wrapper
+    {
+     flex-direction: column;  
+    }
+    .banner-wrapper>div:nth-child(1)
+    {
+        text-align: center;
+    }
+    .btn{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 992px) {
+    .jobs-wrapper
+    {
+        display: inline;
+        flex-direction: column;
+        width: 100%;
+    }
+    .jobs-wrapper>div{
+        margin-bottom: 10px;
+    }
+
+  }
